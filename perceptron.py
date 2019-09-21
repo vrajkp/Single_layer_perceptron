@@ -44,6 +44,7 @@ class Perceptron(object):
         as the first row.
         :return: Array of model outputs [number_of_classes ,n_samples]
         """
+        """
         row = []
         for i in range (0,self.weights.shape[0]):
             activation = []
@@ -56,7 +57,13 @@ class Perceptron(object):
             row.append(activation)
         return(row)
         #raise Warning("You must implement predict. This function should make a prediction on a matrix of inputs")
-
+        """
+        temp = np.ones((1,X.shape[1]))
+        X = np.r_[temp, X]
+        activation = np.dot(self.weights,X)
+        activation[activation < 0] = 0
+        activation[activation > 0] = 1
+        return(activation)
 
     def print_weights(self):
         """
