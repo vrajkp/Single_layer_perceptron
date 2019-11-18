@@ -1,7 +1,5 @@
-# Kamangar, Farhad
-# 1000-123-456
+# Vraj, Patel
 # 2019-09-22
-# Assignment-01-01
 
 import numpy as np
 import itertools
