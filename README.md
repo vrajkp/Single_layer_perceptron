@@ -23,9 +23,20 @@ Perceptron is a dense layer. This means Every input will pass through each neuro
 Here, 
 - 'a' is an output for the activation function which is a class for the input. 
 - 'W' is a weight matrix
+- 'X' is a input to the network
+- 'b' is a Bias to the network
 
-**6 Methods**
+**CODE:**
+
+**7 Methods**
 
 1) _initialize_weights(self):
+2) initialize_all_weights_to_zeros
+3) Prdict
+4) print_weights
+5) train
+6) calculate_percent_error
+7) Main (Contains Driver code to understand the program)
 
-- This method initializes weights according to the input. 
+
+
